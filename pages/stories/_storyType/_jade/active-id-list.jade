@@ -1,0 +1,2 @@
+ul.list-group(v-if="activeIds.length && !isLoading")
+  story-list-item(v-for="itemId in activeIds", :itemId="itemId", :key="itemId")

@@ -1,0 +1,19 @@
+.modal.fade#app-state-modal
+  .modal-dialog(tabindex="-1", role="dialog")
+    .modal-content(role="document")
+      
+      // MODAL HEADER
+      .modal-header
+        span.pull-right(role="button", data-dismiss="modal") &#x274C;
+        // MODAL TITLE
+        .modal-title
+          h4 Application State
+      
+      // MODAL BODY
+      .modal-body
+        pre.bg-primary.pre-scrollable {{ $store.getters.activeIds }}
+        pre.bg-primary.pre-scrollable {{ $store.state }}
+      
+      // MODAL FOOTER
+      .modal-footer
+        button.btn.btn-primary(slot="footer", data-dismiss="modal") O.K. 

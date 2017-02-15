@@ -1,0 +1,25 @@
+#story-list-navbar.collapse.navbar-collapse 
+  ul.nav.navbar-nav
+    // Best Page
+    nuxt-link(tag="li" to="/stories/best")
+      a Best 
+    // Top Page
+    nuxt-link(tag="li" to="/stories/top")
+      a Top
+    // New Page
+    nuxt-link(tag="li" to="/stories/new")
+      a New
+    // Show Page
+    nuxt-link(tag="li" to="/stories/show")
+      a Show HN
+    // Ask Page
+    nuxt-link(tag="li" to="/stories/ask")
+      a Ask HN
+    // Job
+    nuxt-link(tag="li" to="/stories/job")
+      a Job
+    // App-State-Modal Trigger
+    li
+      a(href="", data-toggle="modal", data-target="#app-state-modal") 
+        i.glyphicon.glyphicon-modal-window
+        | &nbsp;App State
